@@ -37,6 +37,24 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name sliceLength
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/length}
+*/
+setReadOnly( ns, 'sliceLength', require( './../../base/length' ) );
+
+/**
+* @name nonreducedDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/nonreduced-dimensions}
+*/
+setReadOnly( ns, 'nonreducedDimensions', require( './../../base/nonreduced-dimensions' ) );
+
+/**
 * @name normalizeMultiSlice
 * @memberof ns
 * @readonly
@@ -55,6 +73,15 @@ setReadOnly( ns, 'normalizeMultiSlice', require( './../../base/normalize-multi-s
 setReadOnly( ns, 'normalizeSlice', require( './../../base/normalize-slice' ) );
 
 /**
+* @name seq2multislice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/seq2multislice}
+*/
+setReadOnly( ns, 'seq2multislice', require( './../../base/seq2multislice' ) );
+
+/**
 * @name seq2slice
 * @memberof ns
 * @readonly
@@ -62,6 +89,15 @@ setReadOnly( ns, 'normalizeSlice', require( './../../base/normalize-slice' ) );
 * @see {@link module:@stdlib/slice/base/seq2slice}
 */
 setReadOnly( ns, 'seq2slice', require( './../../base/seq2slice' ) );
+
+/**
+* @name sliceShape
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/shape}
+*/
+setReadOnly( ns, 'sliceShape', require( './../../base/shape' ) );
 
 /**
 * @name slice2seq

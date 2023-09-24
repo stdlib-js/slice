@@ -43,6 +43,7 @@
     "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
+    "@stdlib/array": "github:stdlib-js/array#main",
     "@stdlib/bench": "github:stdlib-js/bench#main",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
