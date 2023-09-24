@@ -73,6 +73,15 @@ setReadOnly( ns, 'normalizeMultiSlice', require( './../../base/normalize-multi-s
 setReadOnly( ns, 'normalizeSlice', require( './../../base/normalize-slice' ) );
 
 /**
+* @name reducedDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/reduced-dimensions}
+*/
+setReadOnly( ns, 'reducedDimensions', require( './../../base/reduced-dimensions' ) );
+
+/**
 * @name seq2multislice
 * @memberof ns
 * @readonly

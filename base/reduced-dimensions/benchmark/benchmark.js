@@ -27,7 +27,7 @@ var isArray = require( '@stdlib/assert/is-array' );
 var S = require( './../../../ctor' );
 var MultiSlice = require( './../../../multi' );
 var pkg = require( './../package.json' ).name;
-var nonreducedDimensions = require( './../lib' );
+var reducedDimensions = require( './../lib' );
 
 
 // MAIN //
@@ -59,7 +59,7 @@ bench( pkg+'::ndims=1', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = nonreducedDimensions( values[ i%values.length ] );
+		out = reducedDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
@@ -99,7 +99,7 @@ bench( pkg+'::ndims=2', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = nonreducedDimensions( values[ i%values.length ] );
+		out = reducedDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
@@ -139,7 +139,7 @@ bench( pkg+'::ndims=3', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = nonreducedDimensions( values[ i%values.length ] );
+		out = reducedDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
@@ -179,7 +179,7 @@ bench( pkg+'::ndims=4', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = nonreducedDimensions( values[ i%values.length ] );
+		out = reducedDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
@@ -219,7 +219,7 @@ bench( pkg+'::ndims=5', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = nonreducedDimensions( values[ i%values.length ] );
+		out = reducedDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
