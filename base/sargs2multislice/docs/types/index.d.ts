@@ -23,36 +23,46 @@
 import { MultiSlice } from '@stdlib/types/slice';
 
 /**
-* Parses a string-serialized MultiSlice object.
+* Creates a MultiSlice object from a comma-separated list of string-serialized MultiSlice constructor arguments.
 *
 * ## Notes
 *
 * -   The function returns `null` if provided an invalid string.
 *
-* @param str - input string
+* @param str - input string containing constructor arguments
 * @returns MultiSlice object (or null)
 *
 * @example
-* var s = str2multislice( 'MultiSlice(null,null,null)' );
+* var s = sargs2multislice( ',Slice(0,10,1)' );
 * // returns <MultiSlice>
 *
-* var v = s.data;
-* // returns [ null, null, null ]
+* var data = s.data;
+* // returns [ null, <Slice> ]
 *
 * @example
-* var s = str2multislice( 'MultiSlice(10,Slice(0,10,1),null)' );
+* var s = sargs2multislice( 'Slice(0,10,1),' );
 * // returns <MultiSlice>
 *
-* var v = s.data;
-* // returns [ 10, <Slice>, null ]
+* var data = s.data;
+* // returns [ <Slice>, null ]
 *
 * @example
-* var s = str2multislice( 'MultiSlice(foo,bar)' );
-* // returns null
+* var s = sargs2multislice( 'Slice(0,10,1),,,Slice(0,10,1)' );
+* // returns <MultiSlice>
+*
+* var data = s.data;
+* // returns [ <Slice>, null, null, <Slice> ]
+*
+* @example
+* var s = sargs2multislice( ',Slice(0,10,1),null,,Slice(2,9,2),null,' );
+* // returns <MultiSlice>
+*
+* var data = s.data;
+* // returns [ null, <Slice>, null, null, <Slice>, null, null ]
 */
-declare function str2multislice( str: string ): MultiSlice | null;
+declare function sargs2multislice( str: string ): MultiSlice | null;
 
 
 // EXPORTS //
 
-export = str2multislice;
+export = sargs2multislice;

@@ -25,18 +25,18 @@ var isSlice = require( '@stdlib/assert/is-slice' );
 var isMultiSlice = require( '@stdlib/assert/is-multi-slice' );
 var S = require( './../../../ctor' );
 var MultiSlice = require( './../../../multi' );
-var str2multislice = require( './../lib' );
+var sargs2multislice = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof str2multislice, 'function', 'main export is a function' );
+	t.strictEqual( typeof sargs2multislice, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function returns `null` if provided a first argument which is not a valid string', function test( t ) {
+tape( 'the function returns `null` if provided a first argument which is not a valid input string', function test( t ) {
 	var values;
 	var i;
 
@@ -57,8 +57,8 @@ tape( 'the function returns `null` if provided a first argument which is not a v
 		'Multi()',
 		'MultiSlice',
 		'MultiSlice(',
-		'MultiSlice()123',
-		'MultiSlice(foo,bar,beep)',
+		'MultiSlice()',
+		'foo,bar,beep',
 		'MultiSlice(foo)',
 		'MultiSlice(foo,bar)',
 		'MultiSlice(1,2,3',
@@ -76,24 +76,44 @@ tape( 'the function returns `null` if provided a first argument which is not a v
 		'MultiSlice(Slice(foo,bar,beep))'
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( str2multislice( values[ i ] ), null, 'returns expected value when provided ' + values[ i ] );
+		t.strictEqual( sargs2multislice( values[ i ] ), null, 'returns expected value when provided ' + values[ i ] );
 	}
 	t.end();
 });
 
-tape( 'the function parses a string-serialized MultiSlice object', function test( t ) {
+tape( 'the function parses a comma-separated list of constructor arguments', function test( t ) {
 	var expected;
 	var actual;
 	var values;
 	var data;
 	var v;
+	var e;
 	var s;
 	var i;
 	var j;
 
+	values = [
+		'null, Slice( null, null, null )',
+		'Slice( 2, 10, 2 ), 10',
+		'Slice( -2, -10, -2 )',
+		'Slice( null, 10, 2 ), 10, null',
+		'2, 10, Slice( 2, null, 2 )',
+		'null, 10, Slice( 2, 10, null )',
+		'null, null, Slice( null, null, 2 ), 10',
+		'2, 10, 4, Slice( 2, null, null )',
+		'Slice( null, 10, null ), 1, 2, 3, 4',
+		'Slice( -1, null, -2 ), Slice( 2, 10, 1 )',
+		'',
+		'null',
+		'2, 10, 1',
+		'2',
+		',,',
+		'undefined,undefined'
+	];
+
 	/* eslint-disable new-cap */
 
-	values = [
+	expected = [
 		new MultiSlice( null, S( null, null, null ) ),
 		new MultiSlice( S( 2, 10, 2 ), 10 ),
 		new MultiSlice( S( -2, -10, -2 ) ),
@@ -107,22 +127,24 @@ tape( 'the function parses a string-serialized MultiSlice object', function test
 		new MultiSlice(),
 		new MultiSlice( null ),
 		new MultiSlice( 2, 10, 1 ),
-		new MultiSlice( 2 )
+		new MultiSlice( 2 ),
+		new MultiSlice( void 0, void 0, void 0 ),
+		new MultiSlice( void 0, void 0 )
 	];
 
 	/* eslint-enable new-cap */
 
 	for ( i = 0; i < values.length; i++ ) {
-		actual = str2multislice( values[ i ].toString() );
-		expected = values[ i ].data;
+		actual = sargs2multislice( values[ i ] );
+		e = expected[ i ].data;
 		data = actual.data;
 
 		t.strictEqual( isMultiSlice( actual ), true, 'returns expected value. i: ' + i + '.' );
-		t.strictEqual( actual.ndims, values[ i ].ndims, 'returns expected value. i: ' + i + '.' );
-		t.strictEqual( data.length, expected.length, 'returns expected value. i: ' + i + '.' );
-		for ( j = 0; j < expected.length; j++ ) {
+		t.strictEqual( actual.ndims, expected[ i ].ndims, 'returns expected value. i: ' + i + '.' );
+		t.strictEqual( data.length, e.length, 'returns expected value. i: ' + i + '.' );
+		for ( j = 0; j < e.length; j++ ) {
 			s = data[ j ];
-			v = expected[ j ];
+			v = e[ j ];
 			if ( isSlice( v ) ) {
 				t.strictEqual( s.start, v.start, 'returns expected value. i: ' + i + '. j: ' + j + '.' );
 				t.strictEqual( s.stop, v.stop, 'returns expected value. i: ' + i + '. j: ' + j + '.' );
