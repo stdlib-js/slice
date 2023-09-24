@@ -35,38 +35,30 @@ limitations under the License.
 
 > Slice namespace.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/slice
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/slice/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/slice' );
 ```
 
 #### ns
@@ -82,6 +74,15 @@ The namespace contains the following:
 
 <!-- <toc pattern="*"> -->
 
+<div class="namespace-toc">
+
+-   <span class="signature">[`base`][@stdlib/slice/base]</span><span class="delimiter">: </span><span class="description">base slice namespace.</span>
+-   <span class="signature">[`Slice()`][@stdlib/slice/ctor]</span><span class="delimiter">: </span><span class="description">slice constructor.</span>
+-   <span class="signature">[`MultiSlice( ...slice )`][@stdlib/slice/multi]</span><span class="delimiter">: </span><span class="description">multi-slice constructor.</span>
+-   <span class="signature">[`seq2slice( str, len, strict )`][@stdlib/slice/seq2slice]</span><span class="delimiter">: </span><span class="description">convert a subsequence string to a `Slice` object.</span>
+
+</div>
+
 <!-- </toc> -->
 
 </section>
@@ -96,21 +97,11 @@ The namespace contains the following:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/slice' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -193,6 +184,18 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/slice/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice/main/LICENSE
+
+<!-- <toc-links> -->
+
+[@stdlib/slice/base]: https://github.com/stdlib-js/slice/tree/main/base
+
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice/tree/main/ctor
+
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice/tree/main/multi
+
+[@stdlib/slice/seq2slice]: https://github.com/stdlib-js/slice/tree/main/seq2slice
+
+<!-- </toc-links> -->
 
 </section>
 
