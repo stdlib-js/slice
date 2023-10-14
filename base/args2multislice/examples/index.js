@@ -18,16 +18,14 @@
 
 'use strict';
 
-// MODULES //
+var Slice = require( './../../../ctor' );
+var args2multislice = require( './../lib' );
 
-var tape = require( 'tape' );
-var main = require( './../../dist' );
+var s = args2multislice( [ null, null, null ] );
+console.log( s.data );
 
+s = args2multislice( [ 10, new Slice( 2, 10, 1 ), null ] );
+console.log( s.data );
 
-// TESTS //
-
-tape( 'main export is defined', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( main !== void 0, true, 'main export is defined' );
-	t.end();
-});
+s = args2multislice( [ 2, new Slice( 2, 10, 1 ), -5 ] );
+console.log( s.data );
