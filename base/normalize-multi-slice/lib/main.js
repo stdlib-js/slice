@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var MultiSlice = require( './../../../multi' );
+var args2multislice = require( './../../../base/args2multislice' );
 var Slice = require( './../../../ctor' );
 var normalizeSlice = require( './../../../base/normalize-slice' );
 var eOutOfBounds = require( './error_out_of_bounds.js' );
@@ -149,7 +149,7 @@ function normalizeMultiSlice( slice, shape, strict ) {
 	}
 
 	// Return a normalized slice:
-	return MultiSlice.apply( null, args );
+	return args2multislice( args );
 }
 
 

@@ -23,6 +23,7 @@
 var trim = require( '@stdlib/string/base/trim' );
 var str2slice = require( './../../../base/str2slice' );
 var MultiSlice = require( './../../../multi' );
+var args2multislice = require( './../../../base/args2multislice' );
 
 
 // VARIABLES //
@@ -118,7 +119,7 @@ function str2multislice( str ) {
 		}
 		args.push( arg );
 	}
-	return MultiSlice.apply( null, args );
+	return args2multislice( args );
 }
 
 

@@ -22,7 +22,7 @@
 
 var trim = require( '@stdlib/string/base/trim' );
 var Slice = require( './../../../ctor' );
-var MultiSlice = require( './../../../multi' );
+var args2multislice = require( './../../../base/args2multislice' );
 var seq2slice = require( './../../../base/seq2slice' );
 var eInvalidEllipsis = require( './error_invalid_ellipsis.js' );
 var eInsufficientDimensions = require( './error_insufficient_dimensions.js' );
@@ -214,7 +214,7 @@ function seq2multislice( str, shape, strict ) {
 		}
 		return eTooManyDimensions();
 	}
-	return MultiSlice.apply( null, args );
+	return args2multislice( args );
 }
 
 
