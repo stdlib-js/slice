@@ -285,6 +285,13 @@ console.log( JSON.stringify( o ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/slice/multi`][@stdlib/slice/multi]</span><span class="delimiter">: </span><span class="description">multi-slice constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -298,6 +305,12 @@ console.log( JSON.stringify( o ) );
 [@stdlib/ndarray]: https://github.com/stdlib-js/ndarray
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice/tree/main/multi
+
+<!-- </related-links> -->
 
 </section>
 
