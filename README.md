@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { MultiSlice, Slice, base, seq2slice } from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@v0.2.1-deno/mod.js';
+import { MultiSlice, Slice, base, seq2slice } from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@deno/mod.js';
 ```
 
 #### ns
@@ -89,7 +94,7 @@ The namespace contains the following:
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@v0.2.1-deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice@deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
