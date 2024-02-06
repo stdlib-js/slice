@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'args2multislice', require( './../../base/args2multislice' ) );
 
 /**
+* @name int2slice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/slice/base/int2slice}
+*/
+setReadOnly( ns, 'int2slice', require( './../../base/int2slice' ) );
+
+/**
 * @name sliceLength
 * @memberof ns
 * @readonly

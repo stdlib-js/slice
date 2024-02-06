@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,21 +18,32 @@
 
 'use strict';
 
-// MAIN //
-
 /**
-* Returns an error object for a slice which exceeds index bounds.
+* Convert an integer to a Slice object.
 *
-* @private
-* @returns {Object} error object
+* @module @stdlib/slice/base/int2slice
+*
+* @example
+* var int2slice = require( '@stdlib/slice/base/int2slice' );
+*
+* var s = int2slice( -4, 10, false );
+* // returns <Slice>
+*
+* var start = s.start;
+* // returns 6
+*
+* var stop = s.stop;
+* // returns 7
+*
+* var step = s.step;
+* // returns 1
 */
-function error() {
-	return {
-		'code': 'ERR_SLICE_OUT_OF_BOUNDS'
-	};
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = error;
+module.exports = main;
