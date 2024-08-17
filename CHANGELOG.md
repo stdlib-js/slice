@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-08-03)
+## 0.3.0 (2024-08-17)
 
 <section class="packages">
 
@@ -30,8 +30,7 @@
 
 ##### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
@@ -53,8 +52,7 @@
 
 ### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
@@ -104,45 +102,23 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <!-- /.release -->
 
+<section class="release" id="v0.2.1">
+
 ## 0.2.1 (2024-02-05)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.2.0">
 
 ## 0.2.0 (2024-02-05)
 
 <section class="packages">
 
 ### Packages
-
-<section class="package" id="slice-v0.2.0">
-
-#### [@stdlib/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
 
 <section class="package" id="slice-base-v0.2.0">
 
@@ -166,18 +142,6 @@ No changes reported for this release.</details>
 
 <!-- /.package -->
 
-<section class="package" id="slice-base-args2multislice-v0.2.0">
-
-#### [@stdlib/slice/base/args2multislice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/args2multislice)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
 <section class="package" id="slice-base-int2slice-v0.2.0">
 
 #### [@stdlib/slice/base/int2slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/int2slice)
@@ -195,126 +159,6 @@ No changes reported for this release.</details>
 <!-- /.features -->
 
 </details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-length-v0.2.0">
-
-#### [@stdlib/slice/base/length](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/length)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-nonreduced-dimensions-v0.2.0">
-
-#### [@stdlib/slice/base/nonreduced-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/nonreduced-dimensions)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-normalize-multi-slice-v0.2.0">
-
-#### [@stdlib/slice/base/normalize-multi-slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/normalize-multi-slice)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-normalize-slice-v0.2.0">
-
-#### [@stdlib/slice/base/normalize-slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/normalize-slice)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-reduced-dimensions-v0.2.0">
-
-#### [@stdlib/slice/base/reduced-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/reduced-dimensions)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-shape-v0.2.0">
-
-#### [@stdlib/slice/base/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/shape)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-base-slice2seq-v0.2.0">
-
-#### [@stdlib/slice/base/slice2seq](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base/slice2seq)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-ctor-v0.2.0">
-
-#### [@stdlib/slice/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/ctor)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-multi-v0.2.0">
-
-#### [@stdlib/slice/multi](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/multi)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="slice-seq2slice-v0.2.0">
-
-#### [@stdlib/slice/seq2slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/seq2slice)
-
-<details>
-
-No changes reported for this release.</details>
 
 </section>
 
@@ -361,27 +205,21 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.1">
+
 ## 0.1.1 (2023-11-08)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.1.0">
 
 ## 0.1.0 (2023-11-08)
 
@@ -558,10 +396,9 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ##### BREAKING CHANGES
 
 -   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes
--   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes 
 
     -   To migrate, if users were checking for particular error codes, they
-    should add the `SLICE_` prefix to their checks.
+        should add the `SLICE_` prefix to their checks.
 
 </section>
 
@@ -595,10 +432,9 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ##### BREAKING CHANGES
 
 -   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes
--   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes 
 
     -   To migrate, if users were checking for particular error codes, they
-    should add the `SLICE_` prefix to their checks.
+        should add the `SLICE_` prefix to their checks.
 
 </section>
 
@@ -709,10 +545,9 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ##### BREAKING CHANGES
 
 -   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes
--   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes 
 
     -   To migrate, if users were checking for particular error codes, they
-    should add the `SLICE_` prefix to their checks.
+        should add the `SLICE_` prefix to their checks.
 
 </section>
 
@@ -854,13 +689,12 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): refactor to support eliding arguments
--   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): support argument omission 
+-   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): support argument omission
 
     -   Existing code should continue to work as is; however, error handling
-    has changed. One can now create a slice without providing arguments.
-    To adopt the new syntax, one no longer has to explicitly provide
-    `null` for \"empty\" slice parameters.
+        has changed. One can now create a slice without providing arguments.
+        To adopt the new syntax, one no longer has to explicitly provide
+        `null` for \"empty\" slice parameters.
 
 </section>
 
@@ -927,10 +761,9 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ##### BREAKING CHANGES
 
 -   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes
--   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes 
 
     -   To migrate, if users were checking for particular error codes, they
-    should add the `SLICE_` prefix to their checks.
+        should add the `SLICE_` prefix to their checks.
 
 </section>
 
@@ -951,18 +784,16 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ### BREAKING CHANGES
 
 -   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes
--   [`82dea00`](https://github.com/stdlib-js/stdlib/commit/82dea00133a02b5fa3ca4638b390f920003e8a5d): rename error codes 
 
     -   To migrate, if users were checking for particular error codes, they
-    should add the `SLICE_` prefix to their checks.
+        should add the `SLICE_` prefix to their checks.
 
--   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): refactor to support eliding arguments
--   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): support argument omission 
+-   [`a2ba8cb`](https://github.com/stdlib-js/stdlib/commit/a2ba8cb436dacd253ea0e8eef0aeaf0f5e249ccc): support argument omission
 
     -   Existing code should continue to work as is; however, error handling
-    has changed. One can now create a slice without providing arguments.
-    To adopt the new syntax, one no longer has to explicitly provide
-    `null` for \"empty\" slice parameters.
+        has changed. One can now create a slice without providing arguments.
+        To adopt the new syntax, one no longer has to explicitly provide
+        `null` for \"empty\" slice parameters.
 
 </section>
 
@@ -1076,4 +907,8 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
 
