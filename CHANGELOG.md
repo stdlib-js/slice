@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.1">
+
+## 0.3.1 (2024-08-18)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="slice-base-unreleased">
+<section class="package" id="slice-base-v0.3.0">
 
 #### [@stdlib/slice/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/slice/base)
 
