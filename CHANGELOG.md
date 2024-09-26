@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-17)
+## Unreleased (2024-09-26)
 
 <section class="packages">
 
@@ -32,6 +32,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`7b02c16`](https://github.com/stdlib-js/stdlib/commit/7b02c160d8c9ecf6742ea0178c733f938e0c94c4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 
 </details>
