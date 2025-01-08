@@ -177,6 +177,12 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/slice/base/normalize-slice`][@stdlib/slice/base/normalize-slice]</span><span class="delimiter">: </span><span class="description">normalize a Slice object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -186,6 +192,12 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 <section class="links">
 
 [@stdlib/slice/multi]: https://github.com/stdlib-js/slice/tree/main/multi
+
+<!-- <related-links> -->
+
+[@stdlib/slice/base/normalize-slice]: https://github.com/stdlib-js/slice/tree/main/base/normalize-slice
+
+<!-- </related-links> -->
 
 </section>
 
